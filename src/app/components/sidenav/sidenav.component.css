@@ -1,0 +1,9 @@
+ul {
+  background-color: #f6f6f6;
+}
+
+.active {
+  background-color: #8b8383;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=sidenav.component.css.map */

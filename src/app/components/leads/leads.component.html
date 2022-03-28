@@ -1,0 +1,40 @@
+<app-page-header
+  title="leads"
+  icon="bi bi-person-bounding-box"
+  description="the leads of the company"
+></app-page-header>
+
+<div class="header_fixed mt-5">
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>img</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Contact Method</th>
+        <th>Company</th>
+        <th>Service</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lead of leads; index as idx">
+        <td>{{ idx + 1 }}</td>
+        <td><img src="{{ lead.img }}" /></td>
+        <td>{{ lead.firstName }}</td>
+        <td>{{ lead.lastName }}</td>
+        <td>
+          <a [href]="'tel:' + lead.phone">{{ lead.phone }}</a>
+        </td>
+        <td>
+          <a [href]="'mailto:' + lead.email">{{ lead.email }} </a>
+        </td>
+        <td>{{ lead.contactMethod }}</td>
+        <td>{{ lead.company }}</td>
+        <td>{{ lead.service }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

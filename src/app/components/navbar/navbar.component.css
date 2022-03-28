@@ -1,0 +1,5 @@
+.navbar {
+  background: -webkit-gradient(linear, left top, right top, from(#e100ff), to(#00ffea));
+  background: linear-gradient(to right, #e100ff, #00ffea);
+}
+/*# sourceMappingURL=navbar.component.css.map */
